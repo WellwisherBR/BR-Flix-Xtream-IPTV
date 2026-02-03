@@ -1,30 +1,38 @@
 # BR-Flix (Xtream IPTV)
 
-Just a project developed for studies, I hope you like it :D
+Apenas um projeto desenvolvido para os estudos, espero que gostem :D
 
-Characteristics:
-  - Own profile
-  - Recently watched
-  - List of favorites
-  - Checkpoint (Saves your playing time)
-  - Automatic next episode (Jumps to the next EP whenever the video reaches 99%)
-  - Marking episodes already watched (Episodes that have already been watched are named green)
-  - Search bar
-  - Browse movies and series by category
-  - Multi languages ​​(Currently Portuguese/English, you can add a translation for the entire site just by modifying a few lines)
-  - Update the list (Available only for users with level 10)
+Características:
+  - Perfil próprio
+  - Assistidos recentemente
+  - Lista de favoritos
+  - Ponto de verificação (Salva seu tempo de jogo)
+  - Próximo episódio automático (Avança para o próximo episódio quando o vídeo atinge 99%)
+  - Marcação de episódios já assistidos (Episódios já assistidos são marcados em verde)
+  - Barra de pesquisa
+  - Navegue por filmes e séries por categoria
+  - Multilíngue (Atualmente português/inglês, você pode adicionar uma tradução para todo o site modificando apenas algumas linhas)
+  - Atualizar a lista (Disponível apenas para usuários com nível 10)
 
-Requirements:
+Requisitos:
   - Composer (`composer install`)
-  - Web server with URL rewriting
-  - PHP 7.4 or higher (8.1 recommended)
-  - IPTV list with Xtream API support
+  - Servidor web com reescrita de URLs
+  - PHP 7.4 ou maior (8.1 recomendado)
+  - Lista IPTV com suporte à API Xtream
 
-Information:
-  - slimphp/Slim was used for route control and rendering, make sure to install correctly.
-  - A default user will be created with the Database, user: admin password: 123 (This user already has level 10)
-  - Make sure you configure your database in the `src/db.php` file
-  - Write permission for the folder and all its files: `src/storage`
+Instalação:
+  - Instalar o XAMPP 8.1
+  - Instalar o Composer (`https://getcomposer.org`)
+  - Colar os arquivos na pasta `htdocs`
+  - Rodar o movies.sql da pasta `src`
+  - abrir o cmd na pasta `htdocs` e usar o comando (`composer install`)
+  - configurar seu banco de dados no arquivo `src/db.php`
+
+Informação:
+  - O pacote slimphp/Slim foi usado para controle de rotas e renderização. Certifique-se de instalá-lo corretamente.
+  - Um usuário padrão será criado no banco de dados: usuário: admin senha: 123 (Este usuário já possui nível 10).
+  - Certifique-se de configurar seu banco de dados no arquivo `src/db.php`
+  - Permissão de escrita para a pasta e todos os seus arquivos.: `src/storage`
 
 ![Logo](./preview.png)
 ![Logo](./preview2.png)
